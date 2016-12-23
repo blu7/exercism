@@ -1,0 +1,92 @@
+
+==================== FINAL INTERFACE ====================
+2016-10-09 16:55:58.529525379 UTC
+
+interface anagram-0.0.0-9N9ZoAsi3SpBMfVuNDyW18:Anagram 8001
+  interface hash: 757f8cbd8383d0b08ccaa212936bddfd
+  ABI hash: 4b09a0f0eb85c33f8f78b000300b001d
+  export-list hash: b3f4d4b45bddbf800eaec7fd8d39a151
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b159a15c55fa7c6870cb2eb79bbae5a5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Anagram.anagramsFor
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Data.Char eb33dc25ecb52d018a0ca26590e2b50b
+import  -/  base-4.9.0.0:Data.List 49b86831b79b49ce5d4d9416ecba61df
+import  -/  base-4.9.0.0:Data.OldList 0058409f994fb13ae0616e3f1e5b4dae
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.List 13d2451194c1c6e53b4f4f07947736dd
+import  -/  base-4.9.0.0:GHC.Unicode 2343b0871604cc5116abba8f24d75b42
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+5712c4814734424626d2f15abd98cc3e
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Anagram.$trModule2
+                   Anagram.$trModule1) -}
+4e0c08b836900b95a1bbb84cee224884
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Anagram"#) -}
+91887f1c928375454a1c6d0a4c54d411
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "anagram-0.0.0-9N9ZoAsi3SpBMfVuNDyW18"#) -}
+3a8c28795de6baffc1a43233a588339e
+  anagramsFor ::
+    GHC.Base.String -> [GHC.Base.String] -> [GHC.Base.String]
+  {- Arity: 2, Strictness: <L,U><S,1*U>,
+     Unfolding: (\ (s :: GHC.Base.String) (eta :: [GHC.Base.String]) ->
+                 GHC.List.filter
+                   @ [GHC.Types.Char]
+                   (\ (b :: GHC.Base.String) ->
+                    let {
+                      y :: [GHC.Types.Char]
+                      = GHC.Base.map
+                          @ GHC.Types.Char
+                          @ GHC.Types.Char
+                          GHC.Unicode.toLower
+                          b
+                    } in
+                    let {
+                      x :: [GHC.Types.Char]
+                      = GHC.Base.map
+                          @ GHC.Types.Char
+                          @ GHC.Types.Char
+                          GHC.Unicode.toLower
+                          s
+                    } in
+                    case GHC.Classes.$fEq[]_$s$c==1 x y of wild {
+                      GHC.Types.False
+                      -> GHC.Base.eqString
+                           (Data.OldList.sortBy
+                              @ GHC.Types.Char
+                              GHC.Classes.$fOrdChar_$ccompare
+                              x)
+                           (Data.OldList.sortBy
+                              @ GHC.Types.Char
+                              GHC.Classes.$fOrdChar_$ccompare
+                              y)
+                      GHC.Types.True -> GHC.Types.False })
+                   eta) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,0 +1,165 @@
+
+==================== FINAL INTERFACE ====================
+2016-10-08 22:50:29.086184194 UTC
+
+interface bob-0.0.0-BYvLF0MkBeW5sNhLCN5oPY:Bob 8001
+  interface hash: e6c3c36863c1c94dc324720e571c4dab
+  ABI hash: 52d5dacb71d0c852460ad125cd7078ef
+  export-list hash: 761a7e66c5af1cfa43f684670312610f
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b159a15c55fa7c6870cb2eb79bbae5a5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Bob.responseFor
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Data.Char eb33dc25ecb52d018a0ca26590e2b50b
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.List 13d2451194c1c6e53b4f4f07947736dd
+import  -/  base-4.9.0.0:GHC.Unicode 2343b0871604cc5116abba8f24d75b42
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+a6f4eee25f6582c80d4c8e9dcbb01f82
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Bob.$trModule2 Bob.$trModule1) -}
+01da45317c408f3bc7ed11a89030fcb9
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Bob"#) -}
+50876355baa281af2d73496ea404c18e
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "bob-0.0.0-BYvLF0MkBeW5sNhLCN5oPY"#) -}
+021d6eb796bf6322a6715d941b5d91d3
+  $wlvl :: GHC.Prim.Char# -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Char#) ->
+                 let {
+                   x :: GHC.Prim.Word# = GHC.Prim.int2Word# (GHC.Prim.ord# ww)
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.leWord# x 887##) of wild {
+                   GHC.Types.False
+                   -> case {__pkg_ccall base-4.9.0.0 u_iswspace GHC.Prim.Int#
+                                                                -> GHC.Prim.State#
+                                                                     GHC.Prim.RealWorld
+                                                                -> (# GHC.Prim.State#
+                                                                        GHC.Prim.RealWorld,
+                                                                      GHC.Prim.Int# #)}
+                             (GHC.Prim.ord# ww)
+                             GHC.Prim.realWorld# of wild1 { (#,#) ds ds1 ->
+                      case ds1 of wild2 {
+                        DEFAULT -> GHC.Types.False 0# -> GHC.Types.True } }
+                   GHC.Types.True
+                   -> case x of wild1 {
+                        DEFAULT
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.leWord# (GHC.Prim.minusWord# wild1 9##) 4##) of wild2 {
+                             GHC.Types.False
+                             -> case wild1 of wild3 {
+                                  DEFAULT -> GHC.Types.True 160## -> GHC.Types.False }
+                             GHC.Types.True -> GHC.Types.False }
+                        32## -> GHC.Types.False } }) -}
+271d50766ea32713d45aca1e94aa4287
+  responseFor :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (s :: GHC.Base.String) ->
+                 let {
+                   s1 :: [GHC.Types.Char]
+                   = GHC.List.filter @ GHC.Types.Char Bob.responseFor5 s
+                 } in
+                 case GHC.Base.eqString s1 (GHC.Types.[] @ GHC.Types.Char) of wild {
+                   GHC.Types.False
+                   -> let {
+                        $j :: GHC.Prim.Void# -> [GHC.Types.Char]
+                          {- Arity: 1, Strictness: <L,A> -}
+                        = \ (w :: GHC.Prim.Void#)[OneShot] ->
+                          case Bob.responseFor_isYelling s1 of wild1 {
+                            GHC.Types.False
+                            -> case Bob.responseFor_go1
+                                      s1
+                                      (GHC.List.lastError
+                                         @ GHC.Types.Char) of wild2 { GHC.Types.C# x ->
+                               case x of wild3 {
+                                 DEFAULT -> Bob.responseFor4 '?'# -> Bob.responseFor3 } }
+                            GHC.Types.True -> Bob.responseFor2 }
+                      } in
+                      case GHC.Base.eqString
+                             (GHC.List.filter @ GHC.Types.Char GHC.Unicode.isAlpha s1)
+                             (GHC.Types.[] @ GHC.Types.Char) of wild1 {
+                        GHC.Types.False -> $j GHC.Prim.void#
+                        GHC.Types.True
+                        -> case Bob.responseFor_go
+                                  s1
+                                  (GHC.List.lastError @ GHC.Types.Char) of wild2 { GHC.Types.C# x ->
+                           case x of wild3 {
+                             DEFAULT -> Bob.responseFor4
+                             '?'#
+                             -> case Bob.responseFor_isYelling s1 of wild4 {
+                                  GHC.Types.False -> $j GHC.Prim.void#
+                                  GHC.Types.True -> Bob.responseFor4 } } } }
+                   GHC.Types.True -> Bob.responseFor1 }) -}
+ba3bbac1080d6d7deeb5aaccf74ce5b5
+  responseFor1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Fine. Be that way!"#) -}
+4d18aab7ac682a86d0fc19e703013e6f
+  responseFor2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Whoa, chill out!"#) -}
+a5339ce0f9214a4b46f10069ba54eb38
+  responseFor3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Sure."#) -}
+5c5316738dcb4ec6db93394ab8382535
+  responseFor4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Whatever."#) -}
+02c486de148452ec3ebcd7f624c51172
+  responseFor5 :: GHC.Types.Char -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Char) ->
+                 case w of ww { GHC.Types.C# ww1 -> Bob.$wlvl ww1 }) -}
+42efba6ac818c26565723425677e656d
+  responseFor_go ::
+    [GHC.Types.Char] -> GHC.Types.Char -> GHC.Types.Char
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U(U)> -}
+2cdce2e882017cdaca6ce8e7a05fbb9c
+  responseFor_go1 ::
+    [GHC.Types.Char] -> GHC.Types.Char -> GHC.Types.Char
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U(U)> -}
+d3dc818ba91dcc7422c2a5c9d6c4fc95
+  responseFor_isYelling :: [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: [GHC.Types.Char]) ->
+                 case GHC.Classes.$fEq[]_$s$c==1
+                        (GHC.List.filter @ GHC.Types.Char GHC.Unicode.isAlpha s)
+                        (GHC.Types.[] @ GHC.Types.Char) of wild {
+                   GHC.Types.False
+                   -> GHC.Base.eqString
+                        s
+                        (GHC.Base.map
+                           @ GHC.Types.Char
+                           @ GHC.Types.Char
+                           GHC.Unicode.toUpper
+                           s)
+                   GHC.Types.True -> GHC.Types.False }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

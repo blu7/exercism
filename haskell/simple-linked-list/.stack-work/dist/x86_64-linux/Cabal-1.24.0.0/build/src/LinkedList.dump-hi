@@ -1,0 +1,150 @@
+
+==================== FINAL INTERFACE ====================
+2016-10-11 18:09:03.197864622 UTC
+
+interface simple-linked-list-0.0.0-36T8kADGebJAGoar8h4whl:LinkedList 8001
+  interface hash: b77a07ac654e2510166cd6649d2cfb6d
+  ABI hash: c9aaf87d9bdffbdc74566c26d93fac02
+  export-list hash: b85394c07ceb97d7157ca6579e93daa5
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b159a15c55fa7c6870cb2eb79bbae5a5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  LinkedList.datum
+  LinkedList.fromList
+  LinkedList.isNil
+  LinkedList.new
+  LinkedList.next
+  LinkedList.nil
+  LinkedList.reverseLinkedList
+  LinkedList.toList
+  LinkedList.LinkedList
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.List 13d2451194c1c6e53b4f4f07947736dd
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+4389b9ea946167455e519e05be53172f
+  $tc'Nil :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1846897236518754822##
+                   5679341236568461013##
+                   LinkedList.$trModule
+                   LinkedList.$tc'Nil1) -}
+3ba690a99d8c59f55edc9e1dae34686e
+  $tc'Nil1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Nil"#) -}
+802243c979817b8443ba24862f29d662
+  $tc'Node :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18323525277220025135##
+                   9772356016295329030##
+                   LinkedList.$trModule
+                   LinkedList.$tc'Node1) -}
+4ca53f27a9a07ba58df6c378a6ac9f79
+  $tc'Node1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Node"#) -}
+ee6552517c68c73e8d0ea062616635f4
+  $tcLinkedList :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12432682379313795640##
+                   5445091105667273112##
+                   LinkedList.$trModule
+                   LinkedList.$trModule1) -}
+43ab5e3876af3775191e5df69b9aa801
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   LinkedList.$trModule2
+                   LinkedList.$trModule1) -}
+6ce4e5baa98b4ac425159be08642e51a
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "LinkedList"#) -}
+0caa0522ca3a771862656c0ff8308116
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "simple-linked-list-0.0.0-36T8kADGebJAGoar8h4whl"#) -}
+458d4944ef98895b227e72a38bc6b74d
+  data LinkedList a = Nil | Node a (LinkedList.LinkedList a)
+c727280b734e6d4a0b6e325d80077037
+  datum :: LinkedList.LinkedList a -> a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: LinkedList.LinkedList a) ->
+                 case ds of wild {
+                   LinkedList.Nil -> LinkedList.datum1 @ a
+                   LinkedList.Node y ds1 -> y }) -}
+acb02382c086a47086885fd29f218772
+  datum1 :: a
+  {- Strictness: x -}
+4de468ebb0ca2d0005478e87b840352e
+  fromList :: [a] -> LinkedList.LinkedList a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+93b4c2bbea56efbae90bebc02099e5e6
+  isNil :: LinkedList.LinkedList a -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: LinkedList.LinkedList a) ->
+                 case ds of wild {
+                   LinkedList.Nil -> GHC.Types.True
+                   LinkedList.Node ipv ipv1 -> GHC.Types.False }) -}
+5a1126f1d3f16d79b7462bebb999c784
+  new :: a -> LinkedList.LinkedList a -> LinkedList.LinkedList a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>m2,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (x :: a) (ds :: LinkedList.LinkedList a) ->
+                 case ds of wild {
+                   LinkedList.Nil -> LinkedList.Node @ a x (LinkedList.Nil @ a)
+                   LinkedList.Node y z
+                   -> LinkedList.Node @ a x (LinkedList.Node @ a y z) }) -}
+a138dd748c542cdced215946f3c9267f
+  next :: LinkedList.LinkedList a -> LinkedList.LinkedList a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: LinkedList.LinkedList a) ->
+                 case ds of wild {
+                   LinkedList.Nil -> LinkedList.Nil @ a
+                   LinkedList.Node ds1 z -> z }) -}
+0d92af83240b174ee07756f0f2140748
+  nil :: LinkedList.LinkedList a
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True) LinkedList.Nil -}
+f309a27294d50a12c204bfd779b02a1d
+  reverseLinkedList ::
+    LinkedList.LinkedList a -> LinkedList.LinkedList a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (x :: LinkedList.LinkedList a) ->
+                 LinkedList.fromList
+                   @ a
+                   (GHC.List.reverse1
+                      @ a
+                      (LinkedList.toList @ a x)
+                      (GHC.Types.[] @ a))) -}
+574ac1b1dcbf1b4ea4e766c571490792
+  toList :: LinkedList.LinkedList a -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

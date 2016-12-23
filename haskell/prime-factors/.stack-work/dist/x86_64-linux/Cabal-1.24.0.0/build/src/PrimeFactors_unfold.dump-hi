@@ -1,0 +1,69 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-06 17:14:48.03211578 UTC
+
+interface prime-factors-0.0.0-GdtPzsrfG5B4R5lMvMecXx:PrimeFactors_unfold 8001
+  interface hash: fb835fb5083fe408e27815507fb05cf3
+  ABI hash: 06da130106b27cd2f09c88e292e22dcb
+  export-list hash: ab92853ee08a42882c915bfa986c4fd2
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b159a15c55fa7c6870cb2eb79bbae5a5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  PrimeFactors_unfold.primeFactors
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Data.List 49b86831b79b49ce5d4d9416ecba61df
+import  -/  base-4.9.0.0:Data.OldList 0058409f994fb13ae0616e3f1e5b4dae
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 62c0e736506aac47ef40569f5b82e19d
+6545a49874c02738f997f7f9d9ef7952
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   PrimeFactors_unfold.$trModule2
+                   PrimeFactors_unfold.$trModule1) -}
+229300f096c1dfbae35ba71d8d47cc55
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "PrimeFactors_unfold"#) -}
+f0c2abe2e5cdc561fb5341330e01d6b2
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "prime-factors-0.0.0-GdtPzsrfG5B4R5lMvMecXx"#) -}
+8153ac50f159318aaf3fdf35e3b98411
+  $wgo ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer -> [GHC.Integer.Type.Integer]
+  {- Arity: 2, Strictness: <S,U><L,U>, Inline: [0] -}
+3ea9a817f097d3d83178c8d0fde49ded
+  primeFactors ::
+    GHC.Integer.Type.Integer -> [GHC.Integer.Type.Integer]
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (x :: GHC.Integer.Type.Integer) ->
+                 PrimeFactors_unfold.$wgo x PrimeFactors_unfold.primeFactors1) -}
+8031f6cc1186e8ab5c9b92d194d75a59
+  primeFactors1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

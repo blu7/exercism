@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WordCountTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-10-10T13:58:03" hostname="rantanplan-mnj" time="0.005">
+  <properties/>
+  <testcase name="countOneOfEach" classname="WordCountTest" time="0.001"/>
+  <testcase name="countMultipleOccurences" classname="WordCountTest" time="0.0"/>
+  <testcase name="ignorePunctuation" classname="WordCountTest" time="0.0"/>
+  <testcase name="includeNumbers" classname="WordCountTest" time="0.001"/>
+  <testcase name="normalizeCase" classname="WordCountTest" time="0.0"/>
+  <testcase name="countOneWord" classname="WordCountTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,69 @@
+
+==================== FINAL INTERFACE ====================
+2016-10-06 21:32:38.673007968 UTC
+
+interface leap-0.0.0-4uYVmwBGJQhBRFIbJzqiyG:LeapYear 8001
+  interface hash: d6e61a65f02d03701cb4025ce9ce9bb8
+  ABI hash: 41f7338346f3e21eb6c32aed5b4c90fc
+  export-list hash: 8fbaeac34c63d1794af1e533b79bad48
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b159a15c55fa7c6870cb2eb79bbae5a5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  LeapYear.isLeapYear
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+595ea298b16d685116e7c5cef01f825a
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   LeapYear.$trModule2
+                   LeapYear.$trModule1) -}
+578e735257c01bb523e50da34c8751f5
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "LeapYear"#) -}
+4249775fe050723e8243163f6e906112
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "leap-0.0.0-4uYVmwBGJQhBRFIbJzqiyG"#) -}
+28f8c20930a018b1760bfb998a4f9f56
+  $wisLeapYear :: GHC.Prim.Int# -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Classes.modInt# ww 4# of ww2 {
+                   DEFAULT -> GHC.Types.False
+                   0#
+                   -> case GHC.Classes.modInt# ww 100# of ww1 {
+                        DEFAULT -> GHC.Types.True
+                        0#
+                        -> case GHC.Classes.modInt# ww 400# of ww3 {
+                             DEFAULT -> GHC.Types.False 0# -> GHC.Types.True } } }) -}
+d3dc4069bf7337bb654b97c63bf76c09
+  isLeapYear :: GHC.Types.Int -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> LeapYear.$wisLeapYear ww1 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

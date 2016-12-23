@@ -1,0 +1,333 @@
+
+==================== FINAL INTERFACE ====================
+2016-10-09 16:04:42.253372414 UTC
+
+interface space-age-0.0.0-1sPUaIUXHhDJaVwlk9Jzqk:SpaceAge 8001
+  interface hash: 988c9d9d2f4c4f4a88c5552620fa1c79
+  ABI hash: a028e56299cda5e671a180125f517fa7
+  export-list hash: 237fcbfb91102de8fcfc9e6f7ea321ea
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b159a15c55fa7c6870cb2eb79bbae5a5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  SpaceAge.ageOn
+  SpaceAge.Planet{SpaceAge.Earth SpaceAge.Jupiter SpaceAge.Mars SpaceAge.Mercury SpaceAge.Neptune SpaceAge.Saturn SpaceAge.Uranus SpaceAge.Venus}
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+a21c4ffd9249e141a880d5008553d337
+  $tc'Earth :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4917203219268176980##
+                   7557364864600924318##
+                   SpaceAge.$trModule
+                   SpaceAge.$tc'Earth1) -}
+94f09ad7d8a14459173b92378a58f948
+  $tc'Earth1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Earth"#) -}
+53a6ae5ea15f26432e2a720f4cf02282
+  $tc'Jupiter :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14700551552253143849##
+                   7340018943940986377##
+                   SpaceAge.$trModule
+                   SpaceAge.$tc'Jupiter1) -}
+d567e1d129caebf3e64427b30afe1717
+  $tc'Jupiter1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Jupiter"#) -}
+1112c3a29f80745035188f2fc02fcdb8
+  $tc'Mars :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7362769968169341603##
+                   12472699245289713722##
+                   SpaceAge.$trModule
+                   SpaceAge.$tc'Mars1) -}
+92af5fd4d95528369d65e78391132546
+  $tc'Mars1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Mars"#) -}
+9089902fb80686d645531bb0b2e611da
+  $tc'Mercury :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6775215064215279476##
+                   1005667511790927081##
+                   SpaceAge.$trModule
+                   SpaceAge.$tc'Mercury1) -}
+ae23189a61389fd65abf3c683aadb5b8
+  $tc'Mercury1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Mercury"#) -}
+60cc08a4da3d36fe5bb708bad1b13559
+  $tc'Neptune :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12296209688642136497##
+                   1932103731997187062##
+                   SpaceAge.$trModule
+                   SpaceAge.$tc'Neptune1) -}
+36a6c1ea122012b68d33ec01d2498b9e
+  $tc'Neptune1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Neptune"#) -}
+069763c5ca096a905b5c3fa0effe321f
+  $tc'Saturn :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1456024645854942109##
+                   6885409373698349876##
+                   SpaceAge.$trModule
+                   SpaceAge.$tc'Saturn1) -}
+721669e50a00ee3d2ccd4d348c6b24fa
+  $tc'Saturn1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Saturn"#) -}
+db36592f627a60bbd1814aa9ea31d909
+  $tc'Uranus :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1053977345506855051##
+                   8653450337262122954##
+                   SpaceAge.$trModule
+                   SpaceAge.$tc'Uranus1) -}
+c4b0d6d8657acb9e941e875ff75cd53c
+  $tc'Uranus1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Uranus"#) -}
+01de43ffc5888997365ad15b670c699b
+  $tc'Venus :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5288866725891347527##
+                   3871364747577030430##
+                   SpaceAge.$trModule
+                   SpaceAge.$tc'Venus1) -}
+be0939da0974cb3572dd2cb60d469ae2
+  $tc'Venus1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Venus"#) -}
+5a1afbafc39439d35146883af55d1826
+  $tcPlanet :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2431207768217718037##
+                   8420277567512349915##
+                   SpaceAge.$trModule
+                   SpaceAge.$tcPlanet1) -}
+9c4f28c973bb5d4109b2192d5a3d2230
+  $tcPlanet1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Planet"#) -}
+11977b70b249a9985aac6cd2e364e840
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   SpaceAge.$trModule2
+                   SpaceAge.$trModule1) -}
+8082beafecb3a24910a3b0bd6d40bc11
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "SpaceAge"#) -}
+819234b19475875a777b46300fa94679
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "space-age-0.0.0-1sPUaIUXHhDJaVwlk9Jzqk"#) -}
+7f66302e092de4c074ae7117df37b0da
+  $wageOn :: GHC.Real.Fractional a => SpaceAge.Planet -> a -> a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LL),U(1*U(A,A,A,A,A,A,1*C1(U)),C(C1(U)),A,1*C1(U))><L,1*U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: GHC.Real.Fractional a)
+                   (w1 :: SpaceAge.Planet)
+                   (w2 :: a) ->
+                 GHC.Real./
+                   @ a
+                   w
+                   (case w1 of wild {
+                      SpaceAge.Earth -> w2
+                      SpaceAge.Mercury
+                      -> GHC.Real./
+                           @ a
+                           w
+                           w2
+                           (GHC.Real.fromRational @ a w SpaceAge.ageOn19)
+                      SpaceAge.Venus
+                      -> GHC.Real./
+                           @ a
+                           w
+                           w2
+                           (GHC.Real.fromRational @ a w SpaceAge.ageOn16)
+                      SpaceAge.Mars
+                      -> GHC.Real./
+                           @ a
+                           w
+                           w2
+                           (GHC.Real.fromRational @ a w SpaceAge.ageOn13)
+                      SpaceAge.Jupiter
+                      -> GHC.Real./
+                           @ a
+                           w
+                           w2
+                           (GHC.Real.fromRational @ a w SpaceAge.ageOn10)
+                      SpaceAge.Saturn
+                      -> GHC.Real./
+                           @ a
+                           w
+                           w2
+                           (GHC.Real.fromRational @ a w SpaceAge.ageOn8)
+                      SpaceAge.Uranus
+                      -> GHC.Real./
+                           @ a
+                           w
+                           w2
+                           (GHC.Real.fromRational @ a w SpaceAge.ageOn5)
+                      SpaceAge.Neptune
+                      -> GHC.Real./
+                           @ a
+                           w
+                           w2
+                           (GHC.Real.fromRational @ a w SpaceAge.ageOn2) })
+                   (GHC.Num.fromInteger
+                      @ a
+                      (GHC.Real.$p1Fractional @ a w)
+                      SpaceAge.ageOn1)) -}
+39f5b6a1c31cf3954fd1effed604dbae
+  data Planet
+    = Earth
+    | Mercury
+    | Venus
+    | Mars
+    | Jupiter
+    | Saturn
+    | Uranus
+    | Neptune
+d8ac0c5b4ee312cedafc527cc88023a4
+  ageOn ::
+    (GHC.Num.Num a, GHC.Real.Fractional a) => SpaceAge.Planet -> a -> a
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,A><S(LC(C(S))LL),U(1*U(A,A,A,A,A,A,1*C1(U)),C(C1(U)),A,1*C1(U))><L,1*U><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, True)
+                (\ @ a
+                   (w :: GHC.Num.Num a)
+                   (w1 :: GHC.Real.Fractional a)
+                   (w2 :: SpaceAge.Planet)
+                   (w3 :: a) ->
+                 SpaceAge.$wageOn @ a w1 w2 w3) -}
+5e781d5819260aaabef315abf69e4b37
+  ageOn1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (31557600) -}
+fc7f418bb090cd30c258b2e9a7cf487d
+  ageOn10 :: GHC.Real.Ratio GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Integer.Type.Integer
+                   SpaceAge.ageOn12
+                   SpaceAge.ageOn11) -}
+0237082817f3795c038b5b3f9a33c4de
+  ageOn11 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (200000) -}
+6591b7a4b988ae9b595f878d4e93ece3
+  ageOn12 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2372523) -}
+cbe965b33a5778c36cce9e070294c7bd
+  ageOn13 :: GHC.Real.Ratio GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Integer.Type.Integer
+                   SpaceAge.ageOn15
+                   SpaceAge.ageOn14) -}
+1875f62c25377bb0cea88c2d0bcb5382
+  ageOn14 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (5000000) -}
+d1f63bd8ceb9a34aac3cde69817a6a60
+  ageOn15 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (9404079) -}
+acb54068a68e17984d43bab8245497de
+  ageOn16 :: GHC.Real.Ratio GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Integer.Type.Integer
+                   SpaceAge.ageOn18
+                   SpaceAge.ageOn17) -}
+36b82d0409f80307a20f27d44fbb57cc
+  ageOn17 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (50000000) -}
+b127bcb0507f381761b4e794744eec2d
+  ageOn18 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (30759863) -}
+c5d664a5d14ae1c4d723c36b1aa41004
+  ageOn19 :: GHC.Real.Ratio GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Integer.Type.Integer
+                   SpaceAge.ageOn21
+                   SpaceAge.ageOn20) -}
+c664bd70449a8645edb343b56ca22edd
+  ageOn2 :: GHC.Real.Ratio GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Integer.Type.Integer
+                   SpaceAge.ageOn4
+                   SpaceAge.ageOn3) -}
+c3f5afb4f2a3effb5851c9dc564732b0
+  ageOn20 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (10000000) -}
+515b0ecf3bf4fc35bce210107db73c5e
+  ageOn21 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2408467) -}
+cb897afd6d998986ef91eaf514aedbd1
+  ageOn3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (25000) -}
+4765f2a91f70132dce73627570195432
+  ageOn4 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (4119783) -}
+a5558e401e80730b24d37f1b3dea98f4
+  ageOn5 :: GHC.Real.Ratio GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Integer.Type.Integer
+                   SpaceAge.ageOn7
+                   SpaceAge.ageOn6) -}
+e0705e238ec24311f3c5a1db68b89b45
+  ageOn6 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (500000) -}
+04a031b5b852780296989baeceb8fc61
+  ageOn7 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (42008423) -}
+26537a02cca8c16950ffb6f9428e1433
+  ageOn8 :: GHC.Real.Ratio GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Integer.Type.Integer
+                   SpaceAge.ageOn9
+                   SpaceAge.ageOn6) -}
+e4d0ddf27c8ee6df1138444580af45a6
+  ageOn9 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (14723749) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
