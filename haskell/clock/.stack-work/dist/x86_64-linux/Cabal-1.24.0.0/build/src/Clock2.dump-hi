@@ -1,0 +1,416 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-27 15:41:09.117366394 UTC
+
+interface clock-0.0.0-C2hzRbvtHFmH8t82fVkGG2:Clock2 8001
+  interface hash: 549d6b60b01bdbd41488015f4f786830
+  ABI hash: 6853337aa1b823802e6f7b194df50b75
+  export-list hash: 54a2a8fdfd5fa4f263d4f9db82466dc3
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b159a15c55fa7c6870cb2eb79bbae5a5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Clock2.fromHourMin
+  Clock2.toString
+  Clock2.Clock|{clockHour clockMin}
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Data.Char eb33dc25ecb52d018a0ca26590e2b50b
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+8b58bfa67851e54cc1cb81ecaa97ecb5
+  $fEqClock :: GHC.Classes.Eq Clock2.Clock
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Clock2.Clock Clock2.$fEqClock_$c== Clock2.$fEqClock_$c/= -}
+8b58bfa67851e54cc1cb81ecaa97ecb5
+  $fEqClock_$c/= :: Clock2.Clock -> Clock2.Clock -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)L),1*U(1*U(U),1*U(U))><S(S(S)L),1*U(1*U(U),1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Clock2.Clock) (w1 :: Clock2.Clock) ->
+                 case w of ww { Clock2.Time ww1 ww2 ->
+                 case ww1 of ww3 { GHC.Types.I# ww4 ->
+                 case w1 of ww5 { Clock2.Time ww6 ww7 ->
+                 case ww6 of ww8 { GHC.Types.I# ww9 ->
+                 Clock2.$w$c/= ww4 ww2 ww9 ww7 } } } }) -}
+8b58bfa67851e54cc1cb81ecaa97ecb5
+  $fEqClock_$c== :: Clock2.Clock -> Clock2.Clock -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)L),1*U(1*U(U),1*U(U))><S(S(S)L),1*U(1*U(U),1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Clock2.Clock) (w1 :: Clock2.Clock) ->
+                 case w of ww { Clock2.Time ww1 ww2 ->
+                 case ww1 of ww3 { GHC.Types.I# ww4 ->
+                 case w1 of ww5 { Clock2.Time ww6 ww7 ->
+                 case ww6 of ww8 { GHC.Types.I# ww9 ->
+                 Clock2.$w$c== ww4 ww2 ww9 ww7 } } } }) -}
+8b58bfa67851e54cc1cb81ecaa97ecb5
+  $fNumClock :: GHC.Num.Num Clock2.Clock
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Clock2.Clock
+                  Clock2.$fNumClock_$c+
+                  Clock2.$fNumClock_$c-
+                  Clock2.$fNumClock_$c*
+                  Clock2.$fNumClock_$cnegate
+                  Clock2.$fNumClock_$cabs
+                  Clock2.$fNumClock_$csignum
+                  Clock2.$fNumClock_$cfromInteger -}
+ca01fcb85eaacc06af5fe324a32ba3de
+  $fNumClock1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+94bbf729a5759b1f1b86cd574e18f796
+  $fNumClock2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+8b58bfa67851e54cc1cb81ecaa97ecb5
+  $fNumClock_$c* :: Clock2.Clock -> Clock2.Clock -> Clock2.Clock
+  {- Strictness: x -}
+8b58bfa67851e54cc1cb81ecaa97ecb5
+  $fNumClock_$c+ :: Clock2.Clock -> Clock2.Clock -> Clock2.Clock
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)S(S)),1*U(1*U(U),1*U(U))><S(S(S)S(S)),1*U(1*U(U),1*U(U))>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Clock2.Clock) (w1 :: Clock2.Clock) ->
+                 case w of ww { Clock2.Time ww1 ww2 ->
+                 case ww1 of ww3 { GHC.Types.I# ww4 ->
+                 case ww2 of ww5 { GHC.Types.I# ww6 ->
+                 case w1 of ww7 { Clock2.Time ww8 ww9 ->
+                 case ww8 of ww10 { GHC.Types.I# ww11 ->
+                 case ww9 of ww12 { GHC.Types.I# ww13 ->
+                 case Clock2.$w$sfromHourMin1
+                        (GHC.Prim.+# ww4 ww11)
+                        (GHC.Prim.+# ww6 ww13) of ww14 { (#,#) ww15 ww16 ->
+                 Clock2.Time ww15 ww16 } } } } } } }) -}
+8b58bfa67851e54cc1cb81ecaa97ecb5
+  $fNumClock_$c- :: Clock2.Clock -> Clock2.Clock -> Clock2.Clock
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Clock2.Clock) (y :: Clock2.Clock) ->
+                 Clock2.$fNumClock_$c+ x (Clock2.$fNumClock_$cnegate y)) -}
+8b58bfa67851e54cc1cb81ecaa97ecb5
+  $fNumClock_$cabs :: Clock2.Clock -> Clock2.Clock
+  {- Strictness: x -}
+8b58bfa67851e54cc1cb81ecaa97ecb5
+  $fNumClock_$cfromInteger ::
+    GHC.Integer.Type.Integer -> Clock2.Clock
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ (w :: GHC.Integer.Type.Integer) ->
+                 case Clock2.$w$sfromHourMin
+                        Clock2.$fNumClock1
+                        w of ww { (#,#) ww1 ww2 ->
+                 Clock2.Time ww1 ww2 }) -}
+8b58bfa67851e54cc1cb81ecaa97ecb5
+  $fNumClock_$cnegate :: Clock2.Clock -> Clock2.Clock
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(S(S)S(S)),1*U(1*U(U),1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (c :: Clock2.Clock) ->
+                 case c of wild { Clock2.Time h m ->
+                 case m of wild1 { GHC.Types.I# x ->
+                 case h of wild2 { GHC.Types.I# y ->
+                 Clock2.$fNumClock_$sfromHourMin
+                   Clock2.$fNumClock2
+                   (GHC.Types.I#
+                      (GHC.Prim.-# 1440# (GHC.Prim.+# x (GHC.Prim.*# 60# y)))) } } }) -}
+8b58bfa67851e54cc1cb81ecaa97ecb5
+  $fNumClock_$csignum :: Clock2.Clock -> Clock2.Clock
+  {- Strictness: x -}
+8b58bfa67851e54cc1cb81ecaa97ecb5
+  $fNumClock_$sfromHourMin ::
+    GHC.Types.Int -> GHC.Types.Int -> Clock2.Clock
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S(S),1*U(U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { GHC.Types.I# ww3 ->
+                 case Clock2.$w$sfromHourMin1 ww1 ww3 of ww4 { (#,#) ww5 ww6 ->
+                 Clock2.Time ww5 ww6 } } }) -}
+8b58bfa67851e54cc1cb81ecaa97ecb5
+  $fShowClock :: GHC.Show.Show Clock2.Clock
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Clock2.Clock
+                  Clock2.$fShowClock_$cshowsPrec
+                  Clock2.toString
+                  Clock2.$fShowClock_$cshowList -}
+1c95ff6ceadc6c45955aea12ad87a1b0
+  $fShowClock1 :: GHC.Prim.Int# -> GHC.Base.String
+  {- Arity: 1,
+     Unfolding: (\ (ww :: GHC.Prim.Int#)[OneShot] ->
+                 case Clock2.$wdigits ww of wild {
+                   [] -> Clock2.$fShowClock2
+                   : x ds
+                   -> case ds of wild1 {
+                        []
+                        -> GHC.CString.unpackAppendCString#
+                             "0"#
+                             (GHC.Types.:
+                                @ GHC.Types.Char
+                                (GHC.Show.intToDigit x)
+                                (GHC.Types.[] @ GHC.Types.Char))
+                        : ipv ipv1
+                        -> GHC.Base.map
+                             @ GHC.Types.Int
+                             @ GHC.Types.Char
+                             GHC.Show.intToDigit
+                             wild } }) -}
+9cc59b5e2e2be447a03c38bf49ed1bbe
+  $fShowClock2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "00"#) -}
+8b58bfa67851e54cc1cb81ecaa97ecb5
+  $fShowClock_$cshowList :: [Clock2.Clock] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Clock2.Clock]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Clock2.Clock
+                   (Clock2.$fShowClock_$cshowsPrec GHC.Show.shows22)
+                   ls
+                   s) -}
+8b58bfa67851e54cc1cb81ecaa97ecb5
+  $fShowClock_$cshowsPrec ::
+    GHC.Types.Int -> Clock2.Clock -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><L,U(1*U(U),1*U(U))><L,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Clock2.Clock)
+                   (w2 :: GHC.Base.String) ->
+                 Clock2.$w$cshowsPrec w1 w2) -}
+6a78dbdd50666c07437b2607156a1501
+  $tc'Time :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5143356996234335230##
+                   16371026270220380068##
+                   Clock2.$trModule
+                   Clock2.$tc'Time1) -}
+ee2f2773cc624c5d8dfb156d59e61f66
+  $tc'Time1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Time"#) -}
+e76df2436e53ab69d82f534292943f26
+  $tcClock :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4138147060785964571##
+                   2914282591054126038##
+                   Clock2.$trModule
+                   Clock2.$tcClock1) -}
+2eda4e7d6faf4e369717da49d99657f1
+  $tcClock1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Clock"#) -}
+e5d15c13ce0b8da49ab9d02e38e0aa44
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Clock2.$trModule2
+                   Clock2.$trModule1) -}
+3b11532f2d0f8e9cb9fc607639240aa4
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Clock2"#) -}
+53be90c26cbe9fb3d49ec3a1d47fe8e9
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "clock-0.0.0-C2hzRbvtHFmH8t82fVkGG2"#) -}
+dfbd0c6e1eeb21a2835f149e012810cf
+  $w$c/= ::
+    GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,U><L,1*U(U)><S,U><L,1*U(U)>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Types.Int)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Types.Int) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==# ww ww2) of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True
+                   -> case ww1 of wild1 { GHC.Types.I# x ->
+                      case ww3 of wild2 { GHC.Types.I# y ->
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.==# x y) of wild3 {
+                        GHC.Types.False -> GHC.Types.True
+                        GHC.Types.True -> GHC.Types.False } } } }) -}
+cbc1b0d325bcadecfcc8eaa01d97d2e6
+  $w$c== ::
+    GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Prim.Int#
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,U><L,1*U(U)><S,U><L,1*U(U)>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Types.Int)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Types.Int) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==# ww ww2) of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True -> GHC.Classes.eqInt ww1 ww3 }) -}
+8b58bfa67851e54cc1cb81ecaa97ecb5
+  $w$cshowsPrec ::
+    Clock2.Clock -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <L,U(1*U(U),1*U(U))><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Clock2.Clock) (w1 :: GHC.Base.String) ->
+                 case w of wild { Clock2.Time ds ds1 ->
+                 case ds of wild1 { GHC.Types.I# x ->
+                 case GHC.Classes.modInt# x 24# of ww2 { DEFAULT ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   (Clock2.$fShowClock1 ww2)
+                   (GHC.CString.unpackAppendCString#
+                      ":"#
+                      (case ds1 of wild2 { GHC.Types.I# x1 ->
+                       case GHC.Classes.modInt# x1 60# of ww1 { DEFAULT ->
+                       GHC.Base.++
+                         @ GHC.Types.Char
+                         (Clock2.$fShowClock1 ww1)
+                         w1 } })) } } }) -}
+4649174af69c20ffc2b7009a454341d5
+  $w$sfromHourMin ::
+    GHC.Integer.Type.Integer
+    -> GHC.Integer.Type.Integer -> (# GHC.Types.Int, GHC.Types.Int #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>, Inline: [0],
+     Unfolding: (\ (w :: GHC.Integer.Type.Integer)
+                   (w1 :: GHC.Integer.Type.Integer) ->
+                 case GHC.Integer.Type.integerToInt w of wild { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# wild 24#) of wild1 {
+                   GHC.Types.False
+                   -> case GHC.Integer.Type.integerToInt w1 of wild2 { DEFAULT ->
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# wild2 60#) of wild3 {
+                        GHC.Types.False -> (# GHC.Types.I# wild, GHC.Types.I# wild2 #)
+                        GHC.Types.True
+                        -> case GHC.Classes.divInt# wild2 60# of ww4 { DEFAULT ->
+                           case GHC.Classes.modInt# wild2 60# of ww2 { DEFAULT ->
+                           Clock2.$w$sfromHourMin1 (GHC.Prim.+# wild ww4) ww2 } } } }
+                   GHC.Types.True
+                   -> case GHC.Classes.modInt# wild 24# of ww2 { DEFAULT ->
+                      case GHC.Integer.Type.integerToInt w1 of wild2 { DEFAULT ->
+                      Clock2.$w$sfromHourMin1 ww2 wild2 } } } }) -}
+d6ebda4955b50f3d9ff3cb55bc5f5eed
+  $w$sfromHourMin1 ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int# -> (# GHC.Types.Int, GHC.Types.Int #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>, Inline: [0] -}
+9fb9f44484d7df5f76d99e0547c0b668
+  $wdigits :: GHC.Prim.Int# -> [GHC.Types.Int]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+5264838ebd6fc26d8be2493a02a14f4a
+  $wfromHourMin ::
+    GHC.Real.Integral a => a -> a -> (# GHC.Types.Int, GHC.Types.Int #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLC(S)),U(A,A,A,A,A,A,A,A,C(U))><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a (w :: GHC.Real.Integral a) (w1 :: a) (w2 :: a) ->
+                 case GHC.Integer.Type.integerToInt
+                        (GHC.Real.toInteger @ a w w1) of wild { DEFAULT ->
+                 case GHC.Integer.Type.integerToInt
+                        (GHC.Real.toInteger @ a w w2) of wild1 { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# wild 24#) of wild2 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# wild1 60#) of wild3 {
+                        GHC.Types.False -> (# GHC.Types.I# wild, GHC.Types.I# wild1 #)
+                        GHC.Types.True
+                        -> case GHC.Classes.divInt# wild1 60# of ww4 { DEFAULT ->
+                           case GHC.Classes.modInt# wild1 60# of ww2 { DEFAULT ->
+                           Clock2.$w$sfromHourMin1 (GHC.Prim.+# wild ww4) ww2 } } }
+                   GHC.Types.True
+                   -> case GHC.Classes.modInt# wild 24# of ww2 { DEFAULT ->
+                      Clock2.$w$sfromHourMin1 ww2 wild1 } } } }) -}
+8b58bfa67851e54cc1cb81ecaa97ecb5
+  data Clock
+    = Time {clockHour :: GHC.Types.Int, clockMin :: GHC.Types.Int}
+eedba79502a36caf77616b6d50fb4e43
+  clockHour :: Clock2.Clock -> GHC.Types.Int
+  RecSel Left Clock2.Clock
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U(U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Clock2.Clock) ->
+                 case ds of wild { Clock2.Time ds1 ds2 -> ds1 }) -}
+84b80cff88c0d796c361d541dbe8342d
+  clockMin :: Clock2.Clock -> GHC.Types.Int
+  RecSel Left Clock2.Clock
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Clock2.Clock) ->
+                 case ds of wild { Clock2.Time ds1 ds2 -> ds2 }) -}
+1706c10ac469c2f3d7eb09525ffd0d33
+  fromHourMin :: GHC.Real.Integral a => a -> a -> Clock2.Clock
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLC(S)),U(A,A,A,A,A,A,A,A,C(U))><L,U><L,U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a (w :: GHC.Real.Integral a) (w1 :: a) (w2 :: a) ->
+                 case Clock2.$wfromHourMin @ a w w1 w2 of ww { (#,#) ww1 ww2 ->
+                 Clock2.Time ww1 ww2 }) -}
+8b58bfa67851e54cc1cb81ecaa97ecb5
+  toString :: Clock2.Clock -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,U(1*U(U),1*U(U))>,
+     Unfolding: (\ (c :: Clock2.Clock) ->
+                 case c of wild { Clock2.Time ds ds1 ->
+                 case ds of wild1 { GHC.Types.I# x ->
+                 case GHC.Classes.modInt# x 24# of ww2 { DEFAULT ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   (Clock2.$fShowClock1 ww2)
+                   (GHC.CString.unpackAppendCString#
+                      ":"#
+                      (case ds1 of wild2 { GHC.Types.I# x1 ->
+                       case GHC.Classes.modInt# x1 60# of ww1 { DEFAULT ->
+                       Clock2.$fShowClock1 ww1 } })) } } }) -}
+instance [safe] GHC.Classes.Eq [Clock2.Clock] = Clock2.$fEqClock
+instance [safe] GHC.Num.Num [Clock2.Clock] = Clock2.$fNumClock
+instance [safe] GHC.Show.Show [Clock2.Clock] = Clock2.$fShowClock
+"SPEC fromHourMin @ Int" [ALWAYS] forall ($dIntegral :: GHC.Real.Integral
+                                                          GHC.Types.Int)
+  Clock2.fromHourMin @ GHC.Types.Int $dIntegral
+  = Clock2.$fNumClock_$sfromHourMin
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,27 +1,54 @@
 module Clock (clockHour, clockMin, fromHourMin, toString) where
+import Text.Printf (printf)
 
-import Data.Char (intToDigit)
+data Clock = Sec Integer
 
-data Clock = Time {
-        clockHour :: Int ,
-        clockMin :: Int
-        }
+secsPerDay = 86400
+secsPerHour = 3600
+secsPerMinute = 60
+hoursPerDay = 24
+minsPerHour = 60
+
+instance Eq Clock where
+    (==) (Sec s) (Sec s') = (s `mod` secsPerDay) == (s' `mod` secsPerDay)
 
 instance Show Clock where
     show = toString
-
-fromHourMin :: Int -> Int -> Clock
-fromHourMin h m = undefined
-
+        
 toString :: Clock -> String
-toString c = toString' (clockHour c) 12 ++ ":" ++ toString' (clockMin c) 60
+toString c = printf "%02d:%02d" (clockHour c) (clockMin c)
 
-toString' :: Int -> Int -> String
-toString' n m = let d = digits (n `mod` m)
-                in case d of
-                        []     -> "00"
-                        (x:[]) -> "0" ++ map intToDigit d
-                        _      -> map intToDigit d
-    where
-    digits 0 = []
-    digits x = digits (x `div` 10) ++ [x `mod` 10]
+clockHour :: Clock -> Integer
+clockHour (Sec s) = s `div` secsPerHour `mod` hoursPerDay
+
+clockMin ::  Clock -> Integer
+clockMin (Sec s) = s `div` secsPerMinute `mod` minsPerHour
+
+        
+instance Num Clock where
+    fromInteger = Sec . (secsPerMinute *)
+    (Sec x) + (Sec y) = Sec (x + y)
+    negate (Sec x) = Sec (secsPerDay - x)    
+    
+fromHourMin :: Integer -> Integer -> Clock
+fromHourMin h m = fromMin m + fromHour h
+
+fromHour :: Integer -> Clock
+fromHour = fromSec . (secsPerHour *) 
+
+fromMin :: Integer -> Clock
+fromMin = fromSec . (secsPerMinute *) 
+
+fromSec :: Integer -> Clock
+fromSec = Sec . (`mod` secsPerDay)
+
+
+instance Monoid Clock where
+    mempty = Sec 0
+    mappend = (+)
+        
+
+
+
+
+

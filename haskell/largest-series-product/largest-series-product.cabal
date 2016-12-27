@@ -15,7 +15,6 @@ library
   exposed-modules:
       Series
   other-modules:
-      Series2
       Paths_largest_series_product
   default-language: Haskell2010
 

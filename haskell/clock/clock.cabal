@@ -15,6 +15,7 @@ library
   exposed-modules:
       Clock
   other-modules:
+      Clock2
       Paths_clock
   default-language: Haskell2010
 
