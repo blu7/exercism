@@ -10,36 +10,58 @@ module Matrix
     , rows
     , shape
     , transpose
+    , (!?)
     ) where
+import qualified Data.Vector as V
 
-import Data.Vector (Vector)
+data Matrix a = Matrix 
+        { rows    :: Int        -- Number of rows == length of cols
+        , cols    :: Int        -- Number of columns == length of rows
+        , content :: V.Vector a -- Contents of the Matrix
+        }
 
-cols :: Matrix a -> Int
-cols = undefined
+instance (Show a) => Show (Matrix a) where
+    show Matrix {content=v} = show v 
+        
+instance (Eq a) => Eq (Matrix a) where 
+    (==) Matrix {content=v} Matrix {content=v'} = v == v'
 
-column :: Int -> Matrix a -> Vector a
-column = undefined
+(!?) :: Matrix a -> (Int, Int) -> Maybe a
+(!?) m (x, y) = row x m V.!? y 
 
-flatten :: Matrix a -> Vector a
-flatten = undefined
+column :: Int -> Matrix a -> V.Vector a
+column i (Matrix r c v) = V.ifilter (\j _ -> j `elem` [i, (i+c) .. (r*c)]) v
+
+flatten :: Matrix a -> V.Vector a
+flatten = content
 
 fromList :: [[a]] -> Matrix a
-fromList = undefined
+fromList []      = mempty
+fromList l@(r:_) = Matrix (length l) (length r) (V.fromList $ concat l)
 
+-- This does not work with strings :(
 fromString :: Read a => String -> Matrix a
-fromString = undefined
+fromString s = fromList . (fmap . fmap) (read :: Read a => String -> a) . fmap words . lines
 
 reshape :: (Int, Int) -> Matrix a -> Matrix a
-reshape = undefined
+reshape (nr, nc) (Matrix r c v)
+    | nr * nc == r * c = Matrix nr nc v
+    | otherwise        = mempty
 
-row :: Int -> Matrix a -> Vector a
-row = undefined
-
-rows :: Matrix a -> Int
-rows = undefined
+row :: Int -> Matrix a -> V.Vector a
+row i Matrix {content=v, cols=lr} = V.slice (i * lr) lr v
 
 shape :: Matrix a -> (Int, Int)
-shape = undefined
+shape = (,) <$> rows <*> cols
 
 transpose :: Matrix a -> Matrix a
-transpose = undefined
+transpose m@(Matrix r c _) = Matrix c r $ V.concatMap (`column` m) $ V.fromList [0..(c-1)]
+
+instance Monoid (Matrix a) where
+    mempty = Matrix 0 0 V.empty
+    mappend (Matrix r c v) (Matrix r' c' v')
+        | c == c' = Matrix (r+r') c (mappend v v') 
+        | otherwise = mempty
+
+instance Functor Matrix where
+    fmap f m@(Matrix {content=x}) = m {content = fmap f x}
