@@ -1,5 +1,5 @@
 module Phone (areaCode, number, prettyPrint) where
-import Data.Char (isDigit, digitToInt)
+import Data.Char (isDigit)
 
 areaCode :: String -> Maybe String
 areaCode = fmap (take 3) . number 

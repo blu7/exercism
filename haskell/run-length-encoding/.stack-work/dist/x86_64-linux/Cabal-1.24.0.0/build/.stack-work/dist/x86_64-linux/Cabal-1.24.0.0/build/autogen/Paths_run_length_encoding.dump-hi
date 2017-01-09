@@ -1,8 +1,8 @@
 
 ==================== FINAL INTERFACE ====================
-2017-01-07 12:56:10.3918133 UTC
+2017-01-07 13:45:36.131344735 UTC
 
-interface run-length-encoding-0.0.0-7rWo8wRvHm1DM3tEESKTA2:Paths_run_length_encoding 8001
+interface run-length-encoding-0.0.0@run-length-encoding-0.0.0-7rWo8wRvHm1DM3tEESKTA2:Paths_run_length_encoding 8001
   interface hash: f65742b49d0f17e0136e9b28b4bbf313
   ABI hash: 1afcb75079913eeb47433608a2fe1530
   export-list hash: 977ff6569ebdb760588cbacdd54372f5

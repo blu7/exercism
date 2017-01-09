@@ -1,0 +1,49 @@
+
+==================== FINAL INTERFACE ====================
+2017-01-07 13:53:03.486951763 UTC
+
+interface house-0.0.0-8ozOPOMSpZQ1EwA61llaEe:House 8001
+  interface hash: f2aad227d732b6be2d97aa9071b07c49
+  ABI hash: 6a98fbda3eca24d6eda55dadb50e0d3e
+  export-list hash: 2249942bc86b075554c296741d58fa24
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b159a15c55fa7c6870cb2eb79bbae5a5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  House.rhyme
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+a1e3a69afc2bcdc0e97c2949392317ec
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module House.$trModule2 House.$trModule1) -}
+79050d6c83eb2aa9b190f3d7724d2a0a
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "House"#) -}
+b19b9280e6bacc594863c93ab4d26832
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "house-0.0.0-8ozOPOMSpZQ1EwA61llaEe"#) -}
+c2da176305f72a07f8a673b125795ab1
+  rhyme :: GHC.Base.String
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -24,8 +24,7 @@ encodeParser = do
     x  <- letter
     xs <- many $ char x
     ws <- many $ oneOf " \n\t"
-    return $ case xs of
-                [] -> [x] ++ ws
-                _  -> show (1 + length xs) ++ [x] ++ ws
+    return $ encodeParser' x xs ++ ws
 
-
+encodeParser' x [] = [x]
+encodeParser' x xs = show (1 + length xs) ++ [x]
